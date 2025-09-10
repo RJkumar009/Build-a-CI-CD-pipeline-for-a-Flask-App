@@ -3,7 +3,7 @@ os:  linux
 files:
   - source:  /
   destination:  /var/www/html
-hooks
+hooks:
   AfterInstall:
      - location:  scripts/restart_server.sh
      runas: root
