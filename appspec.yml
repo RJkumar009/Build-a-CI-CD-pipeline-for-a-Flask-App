@@ -1,12 +1,10 @@
-
 version: 0.0
-os: Linux
+os: linux
 files:
   - source: /
     destination: /var/www/html
 hooks:
   AfterInstall:
-    - location: scripts/restart-server.sh
+    - location: scripts/restart_server.sh
       timeout: 60
       runas: root
-
